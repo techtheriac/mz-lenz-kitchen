@@ -1,5 +1,5 @@
 <template>
-  <div class="footer">
+  <div class="container__footer">
     <v-row>
       <v-col>
         <div>
@@ -41,7 +41,7 @@ export default {
 </script>
 
 <style lang="scss" scoped>
-.footer {
+.container__footer {
   background-color: #707070 !important;
   color: var(--background-offwhite);
 }
