@@ -1,14 +1,23 @@
 <template>
   <nav class="nav-bar">
-    <Search />
+    <img
+      src="~/assets/images/logo.png"
+      alt="mz-lenz-kitchen-logo"
+      width="157px"
+      height="87px"
+    />
+    <Burger />
+    <Menu />
   </nav>
 </template>
 
 <script>
-import Search from './Search.vue'
+import Burger from '~/components/Burger.vue'
+import Menu from '~/components/Menu.vue'
 export default {
   components: {
-    Search,
+    Burger,
+    Menu,
   },
 }
 </script>
@@ -16,5 +25,6 @@ export default {
 <style lang="scss" scoped>
 .nav-bar {
   display: flex;
+  background-color: #efecf5;
 }
 </style>

@@ -16,10 +16,10 @@ export default {
 </script>
 
 <style lang="scss" scoped>
-.container__burger{
+.container__burger {
   position: absolute;
-  /* top: 2%; */
-  /* right: 2rem; */
+  top: 2%;
+  right: 2rem;
   display: flex;
   flex-direction: column;
   justify-content: space-around;
@@ -27,14 +27,8 @@ export default {
   height: 2rem;
   background: transparent;
   border: none;
-  cursor: pointer;
   padding: 0;
   z-index: 10;
-  display: none;
-
-  @media (max-width: 868px) {
-    display: flex;
-  }
 
   &:focus {
     outline: none;
@@ -43,10 +37,11 @@ export default {
   div {
     width: 2rem;
     height: 0.25rem;
-    background:green;
+    background: green;
     border-radius: 10px;
     transition: all 0.3s linear;
     position: relative;
     transform-origin: 1px;
+  }
 }
 </style>
