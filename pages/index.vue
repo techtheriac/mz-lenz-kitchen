@@ -16,7 +16,6 @@ export default {
     // Menu,
     FoodCardsGroup,
   },
-  data() {},
 }
 </script>
 

@@ -1,0 +1,11 @@
+{
+  "name": "mz-lenz",
+  "version": 2,
+  "alias": ["mz-lenz-app"],
+  "builds": [
+    {
+      "src": "package.json",
+      "use": "@now/static-build"
+    }
+  ]
+}

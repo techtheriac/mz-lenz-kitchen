@@ -1,5 +1,5 @@
 <template>
-  <v-footer class="footer">
+  <div class="footer">
     <v-row>
       <v-col>
         <div>
@@ -32,7 +32,7 @@
         </div>
       </v-col>
     </v-row>
-  </v-footer>
+  </div>
 </template>
 <script>
 export default {
@@ -42,7 +42,7 @@ export default {
 
 <style lang="scss" scoped>
 .footer {
-  background-color: #707070;
+  background-color: #707070 !important;
   color: var(--background-offwhite);
 }
 </style>
