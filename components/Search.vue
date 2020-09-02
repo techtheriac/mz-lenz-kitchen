@@ -1,7 +1,7 @@
 <template>
   <div class="container__search">
     <input type="text" placeholder="What do you want?" />
-    <IconBase class="search-icon">
+    <IconBase class="search-icon" width="23" height="23">
       <SearchIcon />
     </IconBase>
   </div>
@@ -21,16 +21,18 @@ export default {
 <style lang="scss" scoped>
 .container__search {
   background-color: var(--background-offwhite);
-  border-radius: 10px;
-  padding: 0.5rem;
+  border-radius: 20px;
+  padding: 5px 10px 5px 45px;
   display: flex;
-
+  box-shadow: 5px 2px 15px #00000041;
   input {
     background-color: inherit;
     border: none;
     color: black;
     outline: none;
-    padding-right: 5px;
+    margin-left: 5px;
+    margin-right: 45px;
+    font-size: 14px;
 
     &:focus {
       box-shadow: none;

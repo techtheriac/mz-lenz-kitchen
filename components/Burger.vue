@@ -1,5 +1,5 @@
 <template>
-  <button class="container__burger">
+  <button class="container__burger" @click="toggle">
     <div></div>
     <div></div>
     <div></div>
@@ -10,7 +10,12 @@
 export default {
   name: 'Burger',
   props: {
-    open: Boolean,
+    showNav: Boolean,
+  },
+  methods: {
+    toggle(e) {
+      this.$emit('onToggle')
+    },
   },
 }
 </script>
@@ -42,6 +47,12 @@ export default {
     transition: all 0.3s linear;
     position: relative;
     transform-origin: 1px;
+  }
+}
+
+@media (min-width: 35em) {
+  .container__burger {
+    display: none;
   }
 }
 </style>
