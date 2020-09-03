@@ -44,5 +44,9 @@ export default {
 .container__footer {
   background-color: #707070 !important;
   color: var(--background-offwhite);
+  padding: 1.5em;
+}
+.col {
+  align-self: flex-end;
 }
 </style>

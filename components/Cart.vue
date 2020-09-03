@@ -48,4 +48,10 @@ export default {
     font-size: 0.9rem;
   }
 }
+
+@media (max-width: 35em) {
+  .container__cart {
+    display: none;
+  }
+}
 </style>

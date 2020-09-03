@@ -1,3 +1,4 @@
+/* eslint-disable no-console */
 <template>
   <div>
     <NavBar />
@@ -37,5 +38,8 @@ export default {
 }
 body {
   font-family: Lato;
+}
+.toggleCart {
+  display: none;
 }
 </style>
