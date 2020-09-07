@@ -44,10 +44,10 @@ export default {}
 
 .card button {
   background-color: var(--primary-green);
-  padding: 9px 18px;
+  padding: 7px 18px;
   color: white;
-  border-radius: 18px;
-  font-size: 16px;
+  border-radius: 20px;
+  font-size: 15px;
   outline: none;
 }
 

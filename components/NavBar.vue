@@ -1,46 +1,87 @@
 <template>
-  <nav class="nav-bar">
-    <img
-      src="~/assets/images/logo.png"
-      alt="mz-lenz-kitchen-logo"
-      class="logo"
-    />
+  <div>
+    <v-app-bar flat color="#efecf5" dark>
+      <v-app-bar-nav-icon
+        v-if="this.$vuetify.breakpoint.smAndDown"
+        color="green"
+        @click="drawer = true"
+      ></v-app-bar-nav-icon>
 
-    <div class="container__group">
-      <ul class="group__nav">
-        <li><a href="">menu</a></li>
-        <li><a href="">about us</a></li>
-        <li><a href="">contact</a></li>
-      </ul>
+      <nav class="nav-bar">
+        <img
+          src="~/assets/images/logo.png"
+          alt="mz-lenz-kitchen-logo"
+          class="logo"
+        />
 
-      <div class="group__search">
-        <p>
-          <font-awesome-icon
-            :icon="['fas', 'map-marker-alt']"
-          ></font-awesome-icon>
-          My Location: <b> Jerry Irabe Lekki Phase 1</b>
-          <font-awesome-icon :icon="['fas', 'pen']"></font-awesome-icon>
-        </p>
-        <!-- Search component-->
+        <div class="container__group">
+          <ul class="group__nav">
+            <li><a href="">menu</a></li>
+            <li><a href="">about us</a></li>
+            <li><a href="">contact</a></li>
+          </ul>
+
+          <div class="group__search">
+            <p>
+              <font-awesome-icon
+                :icon="['fas', 'map-marker-alt']"
+              ></font-awesome-icon>
+              My Location: <b> Jerry Irabe Lekki Phase 1</b>
+              <font-awesome-icon :icon="['fas', 'pen']"></font-awesome-icon>
+            </p>
+            <!-- Search component-->
+            <Search />
+          </div>
+        </div>
+        <!-- <Burger @onToggle="toggle" /> -->
+        <!-- <Menu :class="{ toggleNav: isActive }" /> -->
+        <Cart />
+      </nav>
+    </v-app-bar>
+    <v-navigation-drawer v-model="drawer" absolute temporary>
+      <v-list nav dense>
+        <v-list-item-group
+          v-model="group"
+          active-class="deep-purple--text text--accent-4"
+        >
+          <v-list-item>
+            <v-list-item-icon>
+              <v-icon>mdi-home</v-icon>
+            </v-list-item-icon>
+            <v-list-item-title>Home</v-list-item-title>
+          </v-list-item>
+
+          <v-list-item>
+            <v-list-item-icon>
+              <v-icon>mdi-account</v-icon>
+            </v-list-item-icon>
+            <v-list-item-title>About us</v-list-item-title>
+          </v-list-item>
+
+          <v-list-item>
+            <v-list-item-icon>
+              <v-icon>mdi-account</v-icon>
+            </v-list-item-icon>
+            <v-list-item-title>Contact</v-list-item-title>
+          </v-list-item>
+        </v-list-item-group>
+
         <Search />
-      </div>
-    </div>
-    <Burger @onToggle="toggle" />
-    <Menu :class="{ toggleNav: isActive }" />
-    <Cart />
-  </nav>
+      </v-list>
+    </v-navigation-drawer>
+  </div>
 </template>
 
 <script>
-import Burger from '~/components/Burger.vue'
-import Menu from '~/components/Menu.vue'
+// import Burger from '~/components/Burger.vue'
+// import Menu from '~/components/Menu.vue'
 import Search from '~/components/Search.vue'
 import Cart from '~/components/Cart.vue'
 // import AppDrawer from '~/components/AppDrawer.vue'
 export default {
   components: {
-    Burger,
-    Menu,
+    // Burger,
+    // Menu,
     Search,
     Cart,
     // AppDrawer,
@@ -48,6 +89,7 @@ export default {
   data() {
     return {
       isActive: false,
+      drawer: false,
     }
   },
   methods: {
@@ -61,7 +103,7 @@ export default {
 <style lang="scss" scoped>
 .nav-bar {
   display: flex;
-  background-color: #efecf5;
+  /* background-color: #efecf5; */
   flex-direction: row;
   .logo {
     width: 100px;

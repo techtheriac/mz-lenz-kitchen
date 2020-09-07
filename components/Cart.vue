@@ -50,6 +50,7 @@ export default {
     border-radius: 20px;
     text-transform: uppercase;
     font-size: 0.9rem;
+    outline: none;
   }
 }
 

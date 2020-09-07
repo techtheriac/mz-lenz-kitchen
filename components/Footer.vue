@@ -1,7 +1,7 @@
 <template>
   <div class="container__footer">
-    <v-row>
-      <v-col>
+    <v-row class="mx-10">
+      <v-col sm="12" lg="4">
         <div>
           <img
             src="~/assets/images/logo.png"
@@ -44,13 +44,6 @@ export default {
 .container__footer {
   background-color: #707070 !important;
   color: var(--background-offwhite);
-  padding: 2em;
-}
-
-@media (min-width: 35em) {
-  .container__footer {
-    padding: 2em 2em 2em 3.5em;
-  }
 }
 
 .col {

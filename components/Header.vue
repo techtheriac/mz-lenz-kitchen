@@ -32,7 +32,7 @@ export default {
     background-color: var(--primary-green);
     padding: 9px 18px;
     color: white;
-    border-radius: 18px;
+    border-radius: 20px;
     font-size: 16px;
     outline: none;
     margin-top: 3em;
@@ -42,7 +42,7 @@ export default {
 @media (min-width: 35em) {
   .landing-page {
     background-position: bottom right;
-    background-size: 65% 72%;
+    background-size: 65% 83%;
     text-shadow: none;
     padding: 7rem 7rem 15rem 3.5rem;
     background-color: #efecf5;

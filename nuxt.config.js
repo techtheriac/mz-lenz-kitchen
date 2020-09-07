@@ -27,7 +27,14 @@ export default {
         content: process.env.npm_package_description || '',
       },
     ],
-    link: [{ rel: 'icon', type: 'image/x-icon', href: '/favicon.ico' }],
+    link: [
+      { rel: 'icon', type: 'image/x-icon', href: '/favicon.ico' },
+      {
+        rel: 'stylesheet',
+        href:
+          'https://fonts.googleapis.com/css2?family=Lato:wght@400;700;900&display=swap',
+      },
+    ],
   },
   /*
    ** Global CSS
@@ -76,9 +83,14 @@ export default {
    ** https://github.com/nuxt-community/vuetify-module
    */
   vuetify: {
+    treeShake: true,
+    // defaultAssets: false,
     customVariables: ['~/assets/variables.scss'],
+    font: {
+      family: 'Lato',
+    },
     theme: {
-      dark: true,
+      dark: false,
       themes: {
         dark: {
           primary: colors.blue.darken2,

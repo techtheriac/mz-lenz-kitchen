@@ -1,12 +1,12 @@
 /* eslint-disable no-console */
 <template>
-  <div>
+  <v-app>
     <NavBar />
     <Header />
     <nuxt />
     <Pagination />
     <Footer />
-  </div>
+  </v-app>
 </template>
 
 <script>
@@ -23,7 +23,6 @@ export default {
 </script>
 
 <style lang="scss">
-@import url('https://fonts.googleapis.com/css2?family=Lato:wght@400;700;900&display=swap');
 :root {
   box-sizing: border-box;
   /* font-size: calc(1vw + 0.6em); */
@@ -38,9 +37,6 @@ export default {
 *::before,
 *::after {
   box-sizing: inherit;
-}
-body {
-  font-family: Lato;
 }
 .toggleCart {
   display: none;

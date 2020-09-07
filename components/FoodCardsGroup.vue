@@ -2,26 +2,7 @@
   <div>
     <v-card flat>
       <v-container>
-        <v-row class="my-4">
-          <v-card flat>
-            <v-card-text>
-              <v-row>
-                <v-col>
-                  <v-btn large depressed rounded color="#f3f6f8">Soup</v-btn>
-                </v-col>
-
-                <v-col>
-                  <v-btn large depressed>Jollof Rice</v-btn>
-                </v-col>
-
-                <v-col>
-                  <v-btn large depressed>Pepper Soup</v-btn>
-                </v-col>
-              </v-row>
-            </v-card-text>
-          </v-card>
-        </v-row>
-
+        <Stripe />
         <v-row>
           <v-col cols="12" lg="5">
             <FoodCards />
@@ -52,11 +33,29 @@
 
 <script>
 import FoodCards from '~/components/FoodCards.vue'
+import Stripe from '~/components/Stripe.vue'
 export default {
   components: {
     FoodCards,
+    Stripe,
   },
 }
 </script>
 
-<style lang="scss" scoped></style>
+<style lang="scss" scoped>
+.stripe-group {
+  background-color: white;
+}
+.empty_stripe {
+  background-color: #c5d2da;
+  margin-left: 23em;
+  width: 404px;
+  height: 64px;
+}
+
+@media (max-width: 35em) {
+  .empty_stripe {
+    display: none;
+  }
+}
+</style>
