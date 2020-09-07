@@ -14,7 +14,13 @@
       </ul>
 
       <div class="group__search">
-        <p>My Location: <b>Jerry Irabe Lekki Phase 1</b></p>
+        <p>
+          <font-awesome-icon
+            :icon="['fas', 'map-marker-alt']"
+          ></font-awesome-icon>
+          My Location: <b> Jerry Irabe Lekki Phase 1</b>
+          <font-awesome-icon :icon="['fas', 'pen']"></font-awesome-icon>
+        </p>
         <!-- Search component-->
         <Search />
       </div>
@@ -72,13 +78,14 @@ export default {
   justify-content: center;
   align-items: center;
   p {
-    font-size: 0.8rem;
+    font-size: 0.6rem;
     color: var(--grey);
     margin-top: 10px;
+    margin-bottom: 6px;
   }
   b {
     color: black;
-    font-size: 1rem;
+    font-size: 0.7rem;
   }
 }
 

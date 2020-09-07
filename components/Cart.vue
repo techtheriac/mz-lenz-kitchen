@@ -3,7 +3,10 @@
     <div class="info__cart">
       <span>3 items</span>
       <span>N 500</span>
-      <span>Cart</span>
+      <span>
+        <font-awesome-icon :icon="['fas', 'cart-plus']"></font-awesome-icon>
+        Cart
+      </span>
     </div>
     <div class="container__button">
       <button>checkout</button>
@@ -34,6 +37,7 @@ export default {
   align-items: flex-end;
   background-color: #000;
   padding: 10px;
+  font-size: 12px;
 }
 
 .container__button {

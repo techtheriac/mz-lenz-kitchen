@@ -50,7 +50,14 @@ export default {
     // Doc: https://github.com/nuxt-community/eslint-module
     '@nuxtjs/eslint-module',
     '@nuxtjs/vuetify',
+    '@nuxtjs/fontawesome',
   ],
+  fontawesome: {
+    icons: {
+      solid: true,
+      brands: true,
+    },
+  },
   /*
    ** Nuxt.js modules
    */

@@ -1,7 +1,7 @@
 <template>
   <div class="container__search">
-    <input type="text" placeholder="What do you want?" />
-    <IconBase class="search-icon" width="23" height="23">
+    <input type="text" placeholder="What do you want? " />
+    <IconBase class="search-icon" width="20" height="20">
       <SearchIcon />
     </IconBase>
   </div>
@@ -22,7 +22,7 @@ export default {
 .container__search {
   background-color: var(--background-offwhite);
   border-radius: 20px;
-  padding: 5px 10px 5px 45px;
+  padding: 2px 10px 2px 45px;
   display: flex;
   box-shadow: 5px 2px 15px #00000041;
   input {
@@ -32,7 +32,7 @@ export default {
     outline: none;
     margin-left: 5px;
     margin-right: 45px;
-    font-size: 14px;
+    font-size: 12px;
 
     &:focus {
       box-shadow: none;

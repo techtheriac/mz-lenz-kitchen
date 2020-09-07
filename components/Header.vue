@@ -44,7 +44,7 @@ export default {
     background-position: bottom right;
     background-size: 65% 72%;
     text-shadow: none;
-    padding: 7rem 7rem 15rem 4rem;
+    padding: 7rem 7rem 15rem 3.5rem;
     background-color: #efecf5;
 
     P {
