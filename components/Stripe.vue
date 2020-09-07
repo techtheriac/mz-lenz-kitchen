@@ -30,7 +30,7 @@ export default {
   background-color: var(--card-lemon);
   width: 75%;
 }
-.row:nth-child(3) {
+/* .row:nth-child(3) {
   margin-right: 3rem;
-}
+} */
 </style>

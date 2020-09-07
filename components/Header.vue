@@ -19,12 +19,19 @@ export default {
 
 <style lang="scss" scoped>
 .landing-page {
-  background: url('../assets/images/landing.png');
+  background: url('../assets/images/mobile.png');
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center center;
+  background-origin: content-box;
   padding: 4rem;
-  text-shadow: 0.1em 0.1em 0.3em #000;
+  text-shadow: 0.1em 0.1em 0.3em #fff;
+  background-color: #efecf5;
+
+  @media (max-width: 375px) {
+    background-size: 158% 74%;
+  }
+
   p {
     margin-top: 1rem;
   }
@@ -41,11 +48,13 @@ export default {
 
 @media (min-width: 35em) {
   .landing-page {
+    background: url('../assets/images/landing.png');
     background-position: bottom right;
     background-size: 65% 83%;
     text-shadow: none;
     padding: 7rem 7rem 15rem 3.5rem;
     background-color: #efecf5;
+    background-repeat: no-repeat;
 
     P {
       color: #707070;
