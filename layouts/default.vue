@@ -4,6 +4,7 @@
     <NavBar />
     <Header />
     <nuxt />
+    <Pagination />
     <Footer />
   </div>
 </template>
@@ -11,10 +12,12 @@
 <script>
 import Footer from '~/components/Footer.vue'
 import Header from '~/components/Header.vue'
+import Pagination from '~/components/Pagination.vue'
 export default {
   components: {
     Footer,
     Header,
+    Pagination,
   },
 }
 </script>
