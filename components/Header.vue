@@ -25,7 +25,7 @@ export default {
   background-position: center center;
   background-origin: content-box;
   padding: 4rem;
-  text-shadow: 0.1em 0.1em 0.3em #fff;
+  text-shadow: 0.1em 0.1em 0.3em #000;
   background-color: #efecf5;
 
   @media (max-width: 375px) {
