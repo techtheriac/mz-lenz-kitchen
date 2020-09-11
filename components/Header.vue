@@ -21,7 +21,8 @@ export default {
 .landing-page {
   background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
     url('../assets/images/mobile.png') center center;
-  background-size: cover;
+  background-size: contain;
+  background-repeat: no-repeat;
   color: white;
   /* display: flex; */
   /* align-items: center;
@@ -37,9 +38,10 @@ export default {
   padding: 9px 18px;
   color: white;
   border-radius: 20px;
-  font-size: 16px;
+  font-size: 14px;
   outline: none;
-  margin-top: 2em;
+  margin-top: 1.7em;
+  margin-bottom: 1em;
 }
 
 @media (min-width: 35em) {
@@ -56,6 +58,16 @@ export default {
     h1 {
       font-size: 3rem;
     }
+  }
+
+  .btn__home {
+    background-color: var(--primary-green);
+    padding: 9px 18px;
+    color: white;
+    border-radius: 20px;
+    font-size: 16px;
+    outline: none;
+    margin-top: 2em;
   }
 }
 

@@ -43,7 +43,7 @@ export default {
 </script>
 
 <style lang="scss" scoped>
-.stripe-group {
+/* .stripe-group {
   background-color: white;
 }
 .empty_stripe {
@@ -51,7 +51,7 @@ export default {
   margin-left: 23em;
   width: 404px;
   height: 64px;
-}
+} */
 
 @media (max-width: 35em) {
   .empty_stripe {

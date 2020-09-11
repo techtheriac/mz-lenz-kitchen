@@ -1,5 +1,5 @@
 <template>
-  <div class="stripe">
+  <div class="stripe ml-0">
     <v-row>
       <v-col>
         <v-btn large depressed rounded color="#c5d2da">Soup</v-btn>
@@ -25,10 +25,14 @@ export default {
 <style lang="scss" scoped>
 .stripe {
   background-color: #c5d2da;
+  width: calc(100%);
 }
 .row {
   background-color: var(--card-lemon);
   width: 75%;
+  > * + * {
+    margin-left: 0;
+  }
 }
 /* .row:nth-child(3) {
   margin-right: 3rem;
